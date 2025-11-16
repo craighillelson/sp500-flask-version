@@ -22,10 +22,6 @@ Return = (Current Price - Price 1 Year Ago) / Price 1 Year Ago × 100
 - ✅ Simple, clean interface
 - ✅ JSON API endpoint for future React integration
 
-## Current Setup (Demo Mode)
-
-The app currently uses **sample data** (S&P 500 at ~$5,800 with an 11.55% return) so you can test it anywhere.
-
 ## Files
 
 - `sp500_app.py` - Main Flask application
