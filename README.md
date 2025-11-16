@@ -52,15 +52,6 @@ The app currently uses **sample data** (S&P 500 at ~$5,800 with an 11.55% return
    curl http://localhost:5000/api/year-return
    ```
 
-## Switching to Real Data
-
-To use real Yahoo Finance data instead of simulated data:
-
-1. Open `sp500_app.py`
-2. Find line 85: `data = get_current_year_return(use_sample=True)`
-3. Change it to: `data = get_current_year_return(use_sample=False)`
-4. Restart the Flask app
-
 **Note:** This requires internet access to fetch data from Yahoo Finance.
 
 ## API Endpoint
@@ -78,19 +69,6 @@ Returns JSON with:
 }
 ```
 
-## Next Steps: Adding React
-
-Once you're happy with the Flask backend, you can:
-
-1. **Create a React app:** `npx create-react-app sp500-frontend`
-2. **Fetch data from the API:** Use `fetch()` or `axios` to call `/api/rolling-returns`
-3. **Add visualizations:** Use libraries like:
-   - **Recharts** (simple, React-friendly charts)
-   - **Chart.js** (powerful charting library)
-   - **D3.js** (for advanced custom visualizations)
-
-## Understanding the Code
-
 ### Key Functions:
 
 1. **`get_current_year_return()`** - The main calculation
@@ -102,15 +80,3 @@ Once you're happy with the Flask backend, you can:
 2. **`get_year_return()`** - Flask API endpoint
    - Calls `get_current_year_return()`
    - Returns data as JSON for easy consumption by frontends
-
-That's it! Just ~80 lines of straightforward code.
-
-## Questions?
-
-The Flask app is ready to go! When you're ready, we can:
-- Add the React frontend to make it look nice
-- Add a chart showing the year's price movement
-- Add comparisons to other time periods
-- Display additional market info
-
-Just let me know what you'd like to tackle next!
