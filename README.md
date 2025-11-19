@@ -24,7 +24,7 @@ Return = (Current Price - Price 1 Year Ago) / Price 1 Year Ago × 100
 
 ## Files
 
-- `sp500_app.py` - Main Flask application
+- `main.py` - Main Flask application
 - `requirements.txt` - Python dependencies
 
 ## How to Run Locally
@@ -36,7 +36,7 @@ Return = (Current Price - Price 1 Year Ago) / Price 1 Year Ago × 100
 
 2. **Run the Flask app:**
    ```bash
-   python sp500_app.py
+   python main.py
    ```
 
 3. **Open your browser:**
